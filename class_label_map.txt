@@ -1,0 +1,6 @@
+Person 1
+Motorcycle 2
+Bicycle 3
+Car 4
+Rickshaw 5
+Autorickshaw 6

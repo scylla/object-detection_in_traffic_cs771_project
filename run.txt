@@ -1,0 +1,23 @@
+resize-images :-- 
+
+python resize_images.py -i /Users/amit/Desktop/MLProject/Motorcycle/ -o /Users/amit/Desktop/MLProject/Output/CarN -s Car
+
+---------------------------------------------------------------------------------
+extract-features :--
+
+python extract_features.py -d /Users/amit/Desktop/MLProject/Output/Data -f /Users/amit/Desktop/MLProject/Output/Features -o Car
+
+-----------------------------------------------------------------------------------
+
+train-classifier :--
+
+python train_classifier.py -f /Users/amit/Desktop/MLProject/Output/Features -o Car -m /Users/amit/Desktop/MLProject/Output/Models
+
+-----------------------------------------------------------------------------------
+
+test-classifier :--
+
+python test_model.py -i /Users/amit/Desktop/test-image-cover.jpeg -o Car -t /Users/amit/Desktop/MLProject/Output/Temp
+
+python motion_detector.py -v /Volumes/seagate\ hdd/MLVideos\ /datasample1.mov  -t /Users/amit/Desktop/MLProject/Output/Temp
+-----------------------------------------------------------------------------------
